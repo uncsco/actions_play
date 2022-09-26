@@ -17,6 +17,6 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
+      - name: Run 'test' script
         run: |
           python test_hello_FAIL.py
