@@ -33,7 +33,7 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 
 - "Upload an Individual File": https://github.com/actions/upload-artifact#upload-an-individual-file
 
-- See `job_0` in file `.github/workflows/ci.yml`:
+- See `job_0` in file `.github/workflows/ci.yml`: https://github.com/uncsco/actions_play/commit/5ccb14dc0c0d0198453102d8cce8f5f5b004c495
 
 ```yaml
 
@@ -52,3 +52,11 @@ jobs:
         name: my-artifact
         path: test_path/artifact/world.txt
 ```
+
+### **Downloading** or deleting artifacts
+
+> **Note:** You can only download artifacts in a workflow that were uploaded during the same workflow run.
+
+// `WIP`...
+
+- See: https://github.com/uncsco/actions_play/commit/0a004cf6826fb9c894820b1bc7072c149207fe81
