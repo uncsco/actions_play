@@ -21,4 +21,8 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 
 ### **Passing** data between jobs in a workflow
 
-- See `.github/workflows/ci.yml`
+- Paste above YAML into new file: `.github/workflows/ci.yml`
+
+- Do a 'push' - (e.g. *update* this `README.md` file)
+
+- See 'run' details: https://github.com/uncsco/actions_play/actions/runs/3127369797/jobs/5073915890
