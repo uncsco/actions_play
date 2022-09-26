@@ -18,7 +18,11 @@ jobs:
       with:
         name: my-artifact
         path: test_path/artifact/world.txt
-    
+    #// https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#downloading-artifacts-during-a-workflow-run
+    - uses: actions/download-artifact@v3
+      with:
+        name: my-artifact
+
   job_1:
     name: Add 3 and 7
     runs-on: ubuntu-latest
