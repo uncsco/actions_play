@@ -12,12 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: mkdir -p test_path/artifact
-    - run: echo hello > test_path/artifact/world.txt
+    #- run: mkdir -p test_path/artifact
+    #- run: echo hello > test_path/artifact/world.txt
+    - run: echo Hello World > hello.txt
     - uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: test_path/artifact/world.txt
+        #path: test_path/artifact/world.txt
+        path: hello.txt
     #// https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts#downloading-artifacts-during-a-workflow-run
     - uses: actions/download-artifact@v3
       with:
