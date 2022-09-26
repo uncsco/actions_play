@@ -19,12 +19,6 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 
 ----
 
-### **Uploading** build and test artifacts
-
-> For more information on syntax, see the `actions/upload-artifact` action.
-
-- "Upload an Individual File": https://github.com/actions/upload-artifact#upload-an-individual-file
-
 ### **Passing** data between jobs in a workflow
 
 - Paste above YAML into new file: `.github/workflows/ci.yml`
@@ -33,3 +27,28 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 
 - See 'run' details: https://github.com/uncsco/actions_play/actions/runs/3127369797/jobs/5073915890
 
+### **Uploading** build and test artifacts
+
+> For more information on syntax, see the `actions/upload-artifact` action.
+
+- "Upload an Individual File": https://github.com/actions/upload-artifact#upload-an-individual-file
+
+- See `job_0` in file `.github/workflows/ci.yml`:
+
+```yaml
+
+jobs:
+
+  #// https://github.com/actions/upload-artifact#upload-an-individual-file
+  job_0:
+    name: Upload one file
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: mkdir -p test_path/artifact
+    - run: echo hello > test_path/artifact/world.txt
+    - uses: actions/upload-artifact@v3
+      with:
+        name: my-artifact
+        path: test_path/artifact/world.txt
+```
