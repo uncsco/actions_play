@@ -74,3 +74,25 @@ https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling
 - **'Actions'**: https://github.com/uncsco/actions_play/actions
     - `ci.yml`: https://github.com/uncsco/actions_play/actions/workflows/ci.yml
 
+----
+
+## RELEASE 
+
+
+https://dev.to/github/the-githubtoken-in-github-actions-how-it-works-change-permissions-customizations-3cgp
+
+> uses: actions/create-release@v1
+
+- `actions/create-release`: https://github.com/actions/create-release
+
+    - `marvinpinto/action-automatic-releases`: https://github.com/marvinpinto/action-automatic-releases
+
+```yaml
+uses: "marvinpinto/action-automatic-releases@latest"
+```
+
+### Hello Example - and Resulting File
+
+See `ci-release-hello.yml`: https://github.com/uncsco/actions_play/blob/main/.github/workflows/ci-release-hello.yml
+
+See **Releases**: https://github.com/uncsco/actions_play/releases
