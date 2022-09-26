@@ -1,0 +1,23 @@
+# Based on `ci.yml`: `.github/workflows/ci.yml`
+
+name: Release - Hello
+
+on: [push]
+
+jobs:
+
+  job-release:
+    name: RELEASE stage
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: echo Hello World > hello.txt
+    #// https://github.com/marvinpinto/action-automatic-releases
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        #automatic_release_tag: "latest"
+        prerelease: false
+        title: "Release Build..."
+        files: |
+          hello.txt
