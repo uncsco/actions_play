@@ -19,6 +19,12 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 
 ----
 
+### **Uploading** build and test artifacts
+
+> For more information on syntax, see the `actions/upload-artifact` action.
+
+- "Upload an Individual File": https://github.com/actions/upload-artifact#upload-an-individual-file
+
 ### **Passing** data between jobs in a workflow
 
 - Paste above YAML into new file: `.github/workflows/ci.yml`
@@ -26,3 +32,4 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 - Do a 'push' - (e.g. *update* this `README.md` file)
 
 - See 'run' details: https://github.com/uncsco/actions_play/actions/runs/3127369797/jobs/5073915890
+
