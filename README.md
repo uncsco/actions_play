@@ -16,3 +16,9 @@ https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-arti
 > - **Downloading** or deleting artifacts
 >
 > - **Passing** data between jobs in a workflow
+
+----
+
+### **Passing** data between jobs in a workflow
+
+- See `.github/workflows/ci.yml`
