@@ -64,3 +64,13 @@ https://www.youtube.com/watch?v=UXMTOBkdvMY
 - Line 27 - **`needs`**: https://github.com/uncsco/actions_play/commit/a3a6ec394831fa2e3a175c51aaa00df4ec82588e#diff-b803fcb7f17ed9235f1e5cb1fcd2f5d3b2838429d4368ae4c57ce4436577f03fR27
 
 // `WIP`...
+
+----
+
+## Disabling a Workflow
+
+https://docs.github.com/en/actions/managing-workflow-runs/disabling-and-enabling-a-workflow
+
+- **'Actions'**: https://github.com/uncsco/actions_play/actions
+    - `ci.yml`: https://github.com/uncsco/actions_play/actions/workflows/ci.yml
+
