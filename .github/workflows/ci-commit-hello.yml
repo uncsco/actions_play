@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - num: Create text file
+    - name: Create text file
       run: echo Hello World > hello.txt
     #// https://stackoverflow.com/a/58249995
     #// - https://stackoverflow.com/a/58393457
