@@ -1,0 +1,24 @@
+# Based on `ci-release-hello.yml`: `.github/workflows/ci-release-hello.yml`
+
+name: Commit - Hello
+
+on: [push]
+
+jobs:
+
+  job-release:
+    name: RELEASE stage
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - num: Create text file
+      run: echo Hello World > hello.txt
+    #// https://stackoverflow.com/a/58249995
+    #// - https://stackoverflow.com/a/58393457
+    - name: Git - commit; add; push
+      run: |
+        git config --global user.name "uncsco"
+        git config --global user.email "uncle.scooby@gmail.com"
+        git add hello.txt
+        git commit -m "[ci] Add hello.txt"
+        git push
