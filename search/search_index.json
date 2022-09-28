@@ -1,0 +1,1 @@
+{"config":{"indexing":"full","lang":["en"],"min_search_length":3,"prebuild_index":false,"separator":"[\\s\\-]+"},"docs":[{"location":"","text":"index.md Bold and italics .","title":"Home"},{"location":"#indexmd","text":"Bold and italics .","title":"index.md"}]}
