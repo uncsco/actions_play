@@ -1,0 +1,14 @@
+#// https://www.mkdocs.org/getting-started/#adding-pages
+site_name: MkLorum
+
+nav:
+    - Home: index.md
+    #- About: about.md
+
+theme:
+  #// https://squidfunk.github.io/mkdocs-material/creating-your-site/
+  name: material
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
